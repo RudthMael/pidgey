@@ -7,13 +7,9 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/RudthMael/pidgey"
 
   s.files = [
-    "LICENSE",
-    "README.textile",
-    "Rakefile",
-    "VERSION",
     "CHANGELOG",
     "lib/pidgey.rb",
-    "lib/pidget/api.rb",
+    "lib/pidgey/api.rb",
     "lib/pidgey/email.rb",
     "lib/pidgey/list.rb",
     "pidgey.gemspec"
