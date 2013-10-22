@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version = "0.0.1"
   s.authors = ["Erem J"]
   s.date = "2013-10-22"
-  s.description = "Simple Ruby library to talk to Sengrid's Newletter API"
+  s.description = "Simple Ruby library to talk to Sengrid's Newsletter API"
   s.homepage = "http://github.com/RudthMael/pidgey"
 
   s.files = [
@@ -20,7 +20,8 @@ Gem::Specification.new do |s|
   ]
 
   s.require_paths = ["lib"]
-  s.summary = "Simple Ruby library to talk to Sengrid's Newletter API"
+  s.summary = "Simple Ruby library to talk to Sengrid's Newsletter API"
 
   s.add_runtime_dependency "httparty",
     ["~> 0.12.0"]
+end
