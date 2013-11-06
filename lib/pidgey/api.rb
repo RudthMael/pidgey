@@ -18,6 +18,7 @@ module Pidgey
     # Includes list methods defined in pidget/list.rb
     include ::Pidgey::List
     include ::Pidgey::Email
+    include ::Pidgey::Newsletter
 
     def get(path, options)
       options[:query].merge!({ api_user: @api_user, api_key: @api_key })
