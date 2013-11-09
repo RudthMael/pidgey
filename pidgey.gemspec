@@ -13,6 +13,8 @@ Gem::Specification.new do |s|
     "lib/pidgey/email.rb",
     "lib/pidgey/list.rb",
     "lib/pidgey/newsletter.rb",
+    "lib/pidgey/newsletter/schedule.rb",
+    "lib/pidgey/newsletter/recipient.rb",
     "pidgey.gemspec"
   ]
 

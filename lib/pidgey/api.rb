@@ -9,16 +9,17 @@ module Pidgey
     # Creates a new API client.
     # @param [String] api_user sengrid api username
     # @param [String] api_key sengrid api key
-    # @return [Pidget::API] the API client
+    # @return [Pidgey::API] the API client
     def initialize(api_user, api_key)
       @api_user = api_user
       @api_key = api_key
     end
 
-    # Includes list methods defined in pidget/list.rb
     include ::Pidgey::List
     include ::Pidgey::Email
     include ::Pidgey::Newsletter
+    include ::Pidgey::Newsletter::Schedule
+    include ::Pidgey::Newsletter::Recipient
 
     def get(path, options)
       options[:query].merge!({ api_user: @api_user, api_key: @api_key })
