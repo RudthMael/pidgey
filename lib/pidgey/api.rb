@@ -23,13 +23,13 @@ module Pidgey
 
     def get(path, options)
       options[:query].merge!({ api_user: @api_user, api_key: @api_key })
-      response = self.class.post(path, options).parsed_response
+      response = self.class.get(path, options).parsed_response
 
       return JSON.parse(response)
     end
 
     def post(path, options = {})
-      options[:query].merge!({ api_user: @api_user, api_key: @api_key })
+      options[:body].merge!({ api_user: @api_user, api_key: @api_key })
       response = self.class.post(path, options).parsed_response
 
       return JSON.parse(response)
